@@ -139,9 +139,10 @@ npx skills add paablobello/tastepix-mcp
 
 | Tool | What it does |
 |---|---|
-| `generate_image` | Text-to-image and image editing with any model in the catalog; up to several reference images (by asset id, public URL or upload). Results render inline in a viewer. |
+| `generate_image` | Text-to-image and image editing with any model in the catalog; up to several reference images (by asset id, public URL or upload), and up to 4 options in one call (`count`). Results render inline in a viewer. |
 | `remove_background` | Cuts out the subject into a transparent PNG. |
 | `upscale_image` | Faithful 2× or 4× upscale. |
+| `vectorize_image` | Turns an existing image (logo, icon, flat artwork) into an SVG vector file. |
 | `animate_image` | Turns an image into a short video with sound (returns at once; the viewer shows it when ready). |
 | `get_video` | Checks on a video started with `animate_image`. |
 | `list_models` | The catalog with what each model is best for and its price. |
@@ -149,9 +150,6 @@ npx skills add paablobello/tastepix-mcp
 | `upload_images` | Inline drop zone so you can use local images as references in chat apps. |
 | `request_upload` | Upload URL for clients that can run code (e.g. Claude Code, Codex). |
 
-<!-- BEGIN upcoming: count and vectorize_image. Ship only once both are live on the server. -->
-**New:** `generate_image` can make several images in one call (`count`), and `vectorize_image` turns an image into an SVG.
-<!-- END upcoming -->
 
 ## Models
 

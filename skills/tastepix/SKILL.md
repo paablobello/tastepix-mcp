@@ -1,6 +1,6 @@
 ---
 name: tastepix
-description: Make and edit images with Tastepix. Use when the user asks to create, draw, generate or design an image (photo, illustration, poster, logo, icon, OG image, hero image), to edit or combine images, remove a background, upscale, or turn an image into a short video.
+description: Make and edit images with Tastepix. Use when the user asks to create, draw, generate or design an image (photo, illustration, poster, logo, icon, OG image, hero image), to edit or combine images, remove a background, upscale, vectorize to SVG, or turn an image into a short video.
 ---
 
 # Tastepix
@@ -19,7 +19,8 @@ https://github.com/paablobello/tastepix-mcp#connect and stop. In Claude Code, `/
 ## Generate and edit
 
 - **`generate_image`** makes an image from a `prompt`, or edits and combines images passed as
-  references. Call it **once per request**. The result is already shown to the user inline: do not
+  references. Call it **once per request**; when the user wants several options, pass `count`
+  (up to 4) instead of calling it several times. The result is already shown to the user inline: do not
   call it again to refine, retry or verify, and do not follow it with `show_images`. Generate again
   only when the user asks for changes or more images.
 - **Model.** Map the model the user names straight to an id from the `model` parameter's list (for
@@ -42,6 +43,8 @@ Pass its `asset_id`. Use these when the user asks for them, instead of regenerat
 
 - **`remove_background`**: cuts out the subject into a transparent PNG.
 - **`upscale_image`**: faithful `factor` 2 or 4 upscale (default 2).
+- **`vectorize_image`**: turns an existing image into an SVG (best on logos, icons and flat
+  artwork; photos come out stylized). Give the user the `svg_url`.
 - **`animate_image`**: short video with sound; optional `prompt` for the motion, `seconds` 5, 8 or
   10 (default 5). It returns at once and the viewer shows the video when it is ready. Don't call it
   again for the same request; if the user asks about it later, call **`get_video`** with the
@@ -73,12 +76,3 @@ Files the user attached or has on disk can't be passed directly; they must be up
 - If a call fails for **insufficient balance** or the daily limit, tell the user and pass on the
   link from the error message if it has one. Do not retry.
 - If a call says too many images are in progress or asks you to wait, wait; don't retry right away.
-
-<!-- BEGIN upcoming: count and vectorize_image. Ship only once both are live on the server. -->
-## Newer tools (use only if the server lists them)
-
-- **Several images at once:** if `generate_image` has a `count` parameter, use it (e.g. `count: 4`)
-  when the user wants several options, instead of calling `generate_image` several times.
-- **`vectorize_image`**: if the server has this tool, use it to turn an existing raster image
-  (`asset_id`) into an SVG, for logos and icons the user wants as vectors.
-<!-- END upcoming -->
