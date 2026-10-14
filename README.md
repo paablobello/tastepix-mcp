@@ -59,6 +59,14 @@ Manually: Settings → Connectors → *Add custom connector* → paste the serve
 </td></tr>
 <tr><td><b>Claude Code</b></td><td>
 
+As a plugin, with the server and the Tastepix skill together:
+
+```
+/plugin marketplace add paablobello/tastepix-mcp
+/plugin install tastepix@tastepix
+```
+Or the server alone:
+
 ```bash
 claude mcp add --transport http --scope user tastepix https://mcp.tastepix.com/mcp
 ```
@@ -81,7 +89,26 @@ Manually, in `~/.cursor/mcp.json`:
 codex mcp add tastepix --url https://mcp.tastepix.com/mcp
 codex mcp login tastepix
 ```
-In the Codex app: Settings → MCP servers → Add server → Streamable HTTP, with the server URL.
+In the Codex app: Settings → MCP servers → Add server → Streamable HTTP, with the server URL.<br/>
+As a plugin with the skill: `codex plugin marketplace add paablobello/tastepix-mcp`, then install **tastepix** from `/plugins`.
+
+</td></tr>
+<tr><td><b>Gemini CLI</b></td><td>
+
+```bash
+gemini extensions install https://github.com/paablobello/tastepix-mcp
+```
+Installs the server with the Tastepix context and skill. The first Tastepix call opens the sign-in.
+
+</td></tr>
+<tr><td><b>VS Code</b></td><td>
+
+[**Add to VS Code**](https://insiders.vscode.dev/redirect/mcp/install?name=tastepix&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.tastepix.com%2Fmcp%22%7D) — VS Code opens with Tastepix filled in: click **Install**, then sign in.<br/>
+From a terminal:
+
+```bash
+code --add-mcp '{"name":"tastepix","type":"http","url":"https://mcp.tastepix.com/mcp"}'
+```
 
 </td></tr>
 <tr><td><b>ChatGPT</b></td><td>
@@ -94,23 +121,35 @@ On chatgpt.com (in a browser): open [chatgpt.com/plugins](https://chatgpt.com/pl
 Any client that supports remote MCP servers over Streamable HTTP with OAuth: add `https://mcp.tastepix.com/mcp`.
 
 </td></tr>
+<tr><td><b>Skill</b><br/>any agent</td><td>
+
+A short guide that helps agents use the Tastepix tools well (already included in the plugins and the Gemini extension):
+
+```bash
+npx skills add paablobello/tastepix-mcp
+```
+
+</td></tr>
 </table>
 
 > Client menus change often. The always-current steps for each app are in your dashboard under **Connect an app**.
+> Setting it up with a coding agent? Point it at [llms-install.md](llms-install.md).
 
 ## Tools
 
 | Tool | What it does |
 |---|---|
-| `generate_image` | Text-to-image and image editing with any model in the catalog; up to several reference images (by asset id, public URL or upload). Results render inline in a viewer. |
+| `generate_image` | Text-to-image and image editing with any model in the catalog; up to several reference images (by asset id, public URL or upload), and up to 4 options in one call (`count`). Results render inline in a viewer. |
 | `remove_background` | Cuts out the subject into a transparent PNG. |
 | `upscale_image` | Faithful 2× or 4× upscale. |
+| `vectorize_image` | Turns an existing image (logo, icon, flat artwork) into an SVG vector file. |
 | `animate_image` | Turns an image into a short video with sound (returns at once; the viewer shows it when ready). |
 | `get_video` | Checks on a video started with `animate_image`. |
 | `list_models` | The catalog with what each model is best for and its price. |
 | `show_images` | Shows existing images from your account inline. |
 | `upload_images` | Inline drop zone so you can use local images as references in chat apps. |
 | `request_upload` | Upload URL for clients that can run code (e.g. Claude Code, Codex). |
+
 
 ## Models
 
@@ -169,7 +208,9 @@ Just ask in your chat:
 ## About this repository
 
 This repository holds the public documentation and registry metadata for the hosted Tastepix MCP
-server (`server.json` for the [Official MCP Registry](https://registry.modelcontextprotocol.io)).
+server (`server.json` for the [Official MCP Registry](https://registry.modelcontextprotocol.io)), plus
+the plugin and extension manifests for Claude Code, Cursor, Codex and Gemini CLI and the `tastepix`
+skill. They contain only configuration and Markdown: no scripts, hooks or code run on install.
 The server itself is a hosted service; its source is not published here.
 
 Support: [hola@tastepix.com](mailto:hola@tastepix.com) · Issues and feedback: open an issue in this repository.

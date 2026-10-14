@@ -1,0 +1,15 @@
+{
+  "name": "tastepix",
+  "description": "Tastepix: AI image generation and editing inside your agent, billed per image.",
+  "owner": {
+    "name": "Tastepix",
+    "url": "https://tastepix.com"
+  },
+  "plugins": [
+    {
+      "name": "tastepix",
+      "source": "./",
+      "description": "Generate and edit images with top models (Nano Banana, GPT Image, FLUX and more), remove backgrounds, upscale and animate, right in your agent. Pay per image, no subscription."
+    }
+  ]
+}

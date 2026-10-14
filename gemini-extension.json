@@ -1,0 +1,11 @@
+{
+  "name": "tastepix",
+  "version": "1.0.0",
+  "description": "Generate and edit images with top models, remove backgrounds, upscale and animate. Pay per image.",
+  "mcpServers": {
+    "tastepix": {
+      "httpUrl": "https://mcp.tastepix.com/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

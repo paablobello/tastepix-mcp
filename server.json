@@ -3,8 +3,25 @@
   "name": "io.github.paablobello/tastepix",
   "title": "Tastepix",
   "description": "Generate and edit images with top models (Nano Banana, GPT Image, FLUX…) in chat. Pay per image.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://tastepix.com",
-  "repository": { "url": "https://github.com/paablobello/tastepix-mcp", "source": "github" },
-  "remotes": [{ "type": "streamable-http", "url": "https://mcp.tastepix.com/mcp" }]
+  "repository": {
+    "url": "https://github.com/paablobello/tastepix-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/paablobello/tastepix-mcp/main/assets/logo.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tastepix.com/mcp"
+    }
+  ]
 }
