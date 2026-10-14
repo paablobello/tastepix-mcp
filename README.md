@@ -7,7 +7,7 @@
 <p align="center">
   <b>Every image model, right in your chat.</b><br />
   A hosted MCP server that adds image generation and editing to Claude, ChatGPT, Claude Code, Cursor and Codex.<br />
-  12 top models, background removal, upscaling and image-to-video. Pay per image, no subscription.
+  11 top models, background removal, upscaling and image-to-video. Pay per image, no subscription.
 </p>
 
 <p align="center">
@@ -124,7 +124,6 @@ Any client that supports remote MCP servers over Streamable HTTP with OAuth: add
 | Seedream 5.0 Flash | ByteDance | Cheapest fast photoreal drafts |
 | Qwen Image 3 | Alibaba | Small and multilingual text, posters |
 | Recraft V4.1 | Recraft | Design and illustration |
-| Recraft V4.1 Vector | Recraft | Logos, icons and vector art (SVG download) |
 | Grok Imagine 2.0 | xAI | Bold, stylized images |
 
 Plus **background removal**, **2×/4× upscale** and **image-to-video** (Grok Imagine Video, 720p).
@@ -146,7 +145,7 @@ Just ask in your chat:
 - *"Make a hero image for my landing page: a calm meadow at dawn, wide 16:9."*
 - *"Use Nano Banana Pro to make an infographic of these numbers."*
 - *"Remove the background from the product photo I just uploaded."*
-- *"Make a logo for 'Solmar' as an SVG with Recraft Vector."*
+- *"Make a logo for 'Solmar' with Recraft V4.1."*
 - *"Upscale that last image 4× and then animate it, slow camera push-in."*
 - In Claude Code or Cursor: *"Generate an OG image for this site and save it to `public/og.png`."*
 
