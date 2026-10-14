@@ -4,6 +4,8 @@
 
 <h1 align="center">Tastepix MCP</h1>
 
+[![smithery badge](https://smithery.ai/badge/pablobellobarcon/tastepix)](https://smithery.ai/servers/pablobellobarcon/tastepix)
+
 <p align="center">
   <b>Every image model, right in your chat.</b><br />
   A hosted MCP server that adds image generation and editing to Claude, ChatGPT, Claude Code, Cursor and Codex.<br />
