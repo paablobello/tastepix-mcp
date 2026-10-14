@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "tastepix": {
+      "type": "http",
       "url": "https://mcp.tastepix.com/mcp"
     }
   }
