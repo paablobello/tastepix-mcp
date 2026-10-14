@@ -1,0 +1,25 @@
+{
+  "name": "tastepix",
+  "version": "1.0.0",
+  "description": "Generate and edit images with top models (Nano Banana, GPT Image, FLUX and more), remove backgrounds, upscale and animate, right in your agent. Pay per image, no subscription.",
+  "keywords": ["tastepix", "image-generation", "image-editing", "background-removal", "upscale", "image-to-video", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Tastepix",
+    "shortDescription": "Generate and edit images with top models",
+    "longDescription": "Tastepix adds image generation and editing to Codex: make images with Nano Banana, GPT Image, FLUX, Seedream, Recraft and more, edit them with references, remove backgrounds, upscale 2x or 4x, and turn images into short videos. Everything lands in your private gallery at tastepix.com. Pay per image from a prepaid balance; sign in to Tastepix on first use.",
+    "developerName": "Tastepix",
+    "category": "Design",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://tastepix.com",
+    "privacyPolicyURL": "https://tastepix.com/privacy",
+    "termsOfServiceURL": "https://tastepix.com/terms",
+    "defaultPrompt": [
+      "Generate an OG image for this site and save it to public/og.png",
+      "Make a hero image for the landing page: a calm meadow at dawn, 16:9",
+      "Remove the background from ./product.jpg"
+    ],
+    "logo": "./assets/logo.png"
+  }
+}

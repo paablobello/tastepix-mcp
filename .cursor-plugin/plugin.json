@@ -1,0 +1,19 @@
+{
+  "name": "tastepix",
+  "version": "1.0.0",
+  "description": "Generate and edit images with top models (Nano Banana, GPT Image, FLUX and more), remove backgrounds, upscale and animate, right in your agent. Pay per image, no subscription.",
+  "author": {
+    "name": "Tastepix"
+  },
+  "homepage": "https://tastepix.com",
+  "repository": "https://github.com/paablobello/tastepix-mcp",
+  "license": "MIT",
+  "keywords": ["tastepix", "image-generation", "image-editing", "background-removal", "upscale", "image-to-video", "mcp"],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": {
+    "tastepix": {
+      "url": "https://mcp.tastepix.com/mcp"
+    }
+  }
+}
