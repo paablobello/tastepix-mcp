@@ -6,6 +6,7 @@
 
 [![smithery badge](https://smithery.ai/badge/pablobellobarcon/tastepix)](https://smithery.ai/servers/pablobellobarcon/tastepix)
 [![Tastepix MCP connector](https://glama.ai/mcp/connectors/io.github.paablobello/tastepix/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.paablobello/tastepix)
+[![MCP Badge](https://lobehub.com/badge/mcp/paablobello-tastepix-mcp)](https://lobehub.com/mcp/paablobello-tastepix-mcp)
 
 <p align="center">
   <b>Every image model, right in your chat.</b><br />
