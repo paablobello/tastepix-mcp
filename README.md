@@ -5,16 +5,17 @@
 <h1 align="center">Tastepix MCP</h1>
 
 [![smithery badge](https://smithery.ai/badge/pablobellobarcon/tastepix)](https://smithery.ai/servers/pablobellobarcon/tastepix)
+[![Tastepix MCP connector](https://glama.ai/mcp/connectors/io.github.paablobello/tastepix/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.paablobello/tastepix)
 
 <p align="center">
   <b>Every image model, right in your chat.</b><br />
   A hosted MCP server that adds image generation and editing to Claude, ChatGPT, Claude Code, Cursor and Codex.<br />
-  12 top models, background removal, upscaling and image-to-video. Pay per image, no subscription.
+  12 top models, background removal, upscaling, SVG vectorizing and image-to-video. Pay per image, no subscription.
 </p>
 
 <p align="center">
-  <a href="https://tastepix.com">Website</a> ·
-  <a href="https://tastepix.com/pricing">Pricing</a> ·
+  <a href="https://tastepix.com/?ref=github">Website</a> ·
+  <a href="https://tastepix.com/pricing?ref=github">Pricing</a> ·
   <a href="#connect">Connect</a> ·
   <a href="#tools">Tools</a> ·
   <a href="#models">Models</a> ·
@@ -33,7 +34,7 @@ Tastepix is a **remote MCP server** (Model Context Protocol). Connect it once to
 ask for images in plain language: *"make a vintage travel poster for a seaside town"*, *"remove the
 background"*, *"upscale it 4×"*, *"animate this"*. The assistant picks the model, the image appears
 inline in the chat with download, reference and edit actions, and everything you make lands in one
-gallery at [tastepix.com](https://tastepix.com).
+gallery at [tastepix.com](https://tastepix.com/?ref=github).
 
 - **No API keys.** Sign in with Google or email; Tastepix handles the providers.
 - **Many models, one account.** Ask for a model by name or let the assistant choose.
@@ -168,13 +169,13 @@ npx skills add paablobello/tastepix-mcp
 | Recraft V4.1 Vector | Recraft | Logos, icons and vector art (SVG download) |
 | Grok Imagine 2.0 | xAI | Bold, stylized images |
 
-Plus **background removal**, **2×/4× upscale** and **image-to-video** (Grok Imagine Video, 720p).
+Plus **background removal**, **2×/4× upscale**, **SVG vectorizing** and **image-to-video** (Grok Imagine Video, 720p).
 
 ## Pricing
 
 Pay per image from a few cents, charged from a prepaid balance (EUR with VAT included in the EU,
 USD elsewhere). No subscription, no expiry, failed generations refunded automatically.
-**Current prices for every model and size: [tastepix.com/pricing](https://tastepix.com/pricing).**
+**Current prices for every model and size: [tastepix.com/pricing](https://tastepix.com/pricing?ref=github).**
 
 <p align="center">
   <img src="assets/pricing.jpg" width="760" alt="Tastepix pricing page with per-model prices" />
@@ -203,7 +204,7 @@ Just ask in your chat:
 
 **Where do my images go?** They're shown in the chat and saved to your private gallery at tastepix.com, from every app you use. You can delete them, or your whole account, from the dashboard.
 
-**Privacy?** See the [privacy policy](https://tastepix.com/privacy) and [terms](https://tastepix.com/terms).
+**Privacy?** See the [privacy policy](https://tastepix.com/privacy?ref=github) and [terms](https://tastepix.com/terms?ref=github).
 
 ## About this repository
 
@@ -216,5 +217,5 @@ The server itself is a hosted service; its source is not published here.
 Support: [hola@tastepix.com](mailto:hola@tastepix.com) · Issues and feedback: open an issue in this repository.
 
 <p align="center">
-  <a href="https://tastepix.com"><img src="assets/landing.jpg" width="760" alt="Tastepix website" /></a>
+  <a href="https://tastepix.com/?ref=github"><img src="assets/landing.jpg" width="760" alt="Tastepix website" /></a>
 </p>
